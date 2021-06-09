@@ -6,14 +6,14 @@ const USER_AGENT_LINUX =
   'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36';
 
 function getUserAgent() {
-  const { platform } = process;
-  if (platform === 'darwin') {
-    return USER_AGENT_MAC;
-  }
-  if (platform === 'win32') {
+ //const { platform } = process;
+//  if (platform === 'darwin') {
+ //   return USER_AGENT_MAC;
+ // }
+ // if (platform === 'win32') {
     return USER_AGENT_WINDOWS;
-  }
-  return USER_AGENT_LINUX;
+ // }
+ // return USER_AGENT_LINUX;
 }
 
 function extract(string, regexp, errorMessage) {
